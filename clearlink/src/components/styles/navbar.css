@@ -22,3 +22,9 @@ nav ul {
 .nav-item:hover svg {
   rotate: 180deg;
 }
+
+@media screen and (max-width: 1024px) {
+  nav ul {
+    gap: 1em;
+  }
+}
