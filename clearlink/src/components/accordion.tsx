@@ -1,4 +1,5 @@
 import { Icons } from "./icons";
+import { useState } from "react";
 
 type AccordionItem = {
   question: string;
@@ -8,11 +9,17 @@ type AccordionItem = {
 export type AccordionData = AccordionItem[];
 
 function Accordion({ data }: { data: AccordionData }) {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       {data.map((item) => (
         <div key={item.question}>
-          <button>
+          <button onClick={handleClick}>
             <p>{item.question}</p>
             <div>
               <span>
