@@ -1,0 +1,44 @@
+.primary-btn {
+  background-color: white;
+  color: var(--gray-900);
+  border: 1px solid var(--gray-400);
+}
+
+.primary-btn,
+.secondary-btn {
+  box-shadow: 0 1px 2px 0 hsla(220, 43%, 11%, 0.05);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  background-color: var(--gray-300);
+  border-color: transparent;
+}
+
+.primary-btn:focus,
+.primary-btn:focus-visible {
+  outline: 2px auto var(--blue-700);
+}
+
+.secondary-btn {
+  background-color: var(--blue-700);
+  border-color: transparent;
+  color: white;
+}
+
+.secondary-btn:hover {
+  color: var(--gray-900);
+}
+
+.secondary-btn:focus,
+.secondary-btn:focus-visible {
+  outline: 2px auto var(--gray-900);
+}
+
+.icon-btn {
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 8px;
+}

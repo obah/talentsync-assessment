@@ -1,0 +1,24 @@
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5em;
+  text-transform: capitalize;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--gray-500);
+  font-weight: 600;
+  font-size: 1.125em;
+  cursor: pointer;
+}
+
+.nav-item svg {
+  transition: all 0.25s;
+}
+
+.nav-item:hover svg {
+  rotate: 180deg;
+}

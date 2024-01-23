@@ -1,5 +1,5 @@
 import { FaqSection } from "./components/landing-page/faq-section";
-import { Footer } from "./components/footer/Footer";
+import { Footer } from "./components/footer/footer";
 import { HeroSection } from "./components/landing-page/hero-section";
 import { Navbar } from "./components/header/navbar";
 import { OfferSection } from "./components/landing-page/offer-section";

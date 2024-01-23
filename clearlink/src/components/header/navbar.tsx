@@ -13,9 +13,9 @@ function Navbar() {
         <Menu />
       </div>
 
-      <div>
-        <button className="">Talk to sales</button>
-        <button className="">Sign up for free</button>
+      <div className="cta-buttons">
+        <button className="primary-btn">Talk to sales</button>
+        <button className="secondary-btn">Sign up for free</button>
       </div>
     </header>
   );

@@ -38,10 +38,6 @@ function Menu() {
     {
       name: "pricing",
       link: "/",
-      childmenu: {
-        name: "",
-        link: "",
-      },
     },
   ];
 
@@ -49,11 +45,13 @@ function Menu() {
     <nav>
       <ul>
         {menu_items.map((item) => (
-          <li key={item.name}>
+          <li key={item.name} className="nav-item">
             {item.name}
-            <span>
-              <Icons.ChevronDown />
-            </span>
+            {item.childmenu ? (
+              <span className="dropdown-icon">
+                <Icons.ChevronDown />
+              </span>
+            ) : null}
           </li>
         ))}
       </ul>

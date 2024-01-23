@@ -7,6 +7,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --gray-100: hsla(220, 22%, 96%, 1);
+  --gray-300: hsla(216, 16%, 84%, 1);
+  --gray-400: hsla(218, 15%, 65%, 1);
+  --gray-500: hsla(220, 13%, 46%, 1);
+  --gray-900: hsla(221, 43%, 11%, 1);
+
+  --blue-700: hsla(218, 80%, 46%, 1);
 }
 
 * {
@@ -27,6 +35,7 @@ a:hover {
 body {
   min-width: 320px;
   min-height: 100vh;
+  background: url("/background-pattern.svg") top no-repeat;
 }
 
 h1 {
@@ -34,21 +43,30 @@ h1 {
   line-height: 1.1;
 }
 
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+header {
+  background-color: var(--gray-100);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1470px;
+  min-width: 1200px;
+  margin: 40px auto 0;
+  border: 1px var(--gray-300) solid;
+  border-radius: 100px;
+  padding: 1em 2em;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  border-radius: 100px;
+  padding: 0.8em 1.5em;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
