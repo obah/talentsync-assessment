@@ -1,5 +1,5 @@
-import { Icons } from "../icons";
 import { FooterNav } from "./footer-nav";
+import { Icons } from "../icons";
 
 function Footer() {
   return (

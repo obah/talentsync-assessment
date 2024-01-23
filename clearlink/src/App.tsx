@@ -1,10 +1,11 @@
+import { FaqSection } from "./components/landing-page/faq-section";
+import { Footer } from "./components/footer/Footer";
 import { HeroSection } from "./components/landing-page/hero-section";
 import { Navbar } from "./components/header/navbar";
+import { OfferSection } from "./components/landing-page/offer-section";
 import { TestimonialsSection } from "./components/landing-page/testimonials-section";
 import { WhyUsSection } from "./components/landing-page/why-us-section";
 import "./App.css";
-import { FaqSection } from "./components/landing-page/faq-section";
-import { OfferSection } from "./components/landing-page/offer-section";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <FaqSection />
         <OfferSection />
       </main>
+      <Footer />
     </>
   );
 }

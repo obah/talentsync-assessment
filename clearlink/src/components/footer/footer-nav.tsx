@@ -1,8 +1,8 @@
+import AppleStoreBadge from "../../assets/images/apple-store-badge.svg";
 import FullLogo from "../../assets/images/full_logo.svg";
-import { footer_menu_data } from "../../lib/footer-menu-data";
 import { FooterMenu } from "./footer-menu";
 import PlaystoreBadge from "../../assets/images/playstore-badge.svg";
-import AppleStoreBadge from "../../assets/images/apple-store-badge.svg";
+import { footer_menu_data } from "../../lib/footer-menu-data";
 
 function FooterNav() {
   return (
