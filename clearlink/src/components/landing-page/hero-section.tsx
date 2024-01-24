@@ -1,7 +1,12 @@
 import Avatars from "../../assets/images/Avatars.svg";
 import { Icons } from "../icons";
-import Partners from "../../assets/images/partners.svg";
 import ProductDemo from "../../assets/images/product-demo.svg";
+import Shopify from "../../assets/images/shopify-big.svg";
+import Coinbase from "../../assets/images/coinbase.svg";
+import Dropbox from "../../assets/images/dropbox.svg";
+import Intercom from "../../assets/images/intercom.svg";
+import Marvel from "../../assets/images/marvel.svg";
+import Automattic from "../../assets/images/automattic.svg";
 import "../styles/hero-section.css";
 
 function HeroSection() {
@@ -55,7 +60,50 @@ function HeroSection() {
         <p>
           Join 1,500+ companies already video conferencing the ClearLink way
         </p>
-        <img src={Partners} alt="Our partners and customers" />
+        <div className="partner-images">
+          <a
+            href="http://www.shopify.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Shopify} alt="shopify logo" />
+          </a>
+          <a
+            href="http://www.coinbase.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Coinbase} alt="coinbase logo" />
+          </a>
+          <a
+            href="http://www.dropbox.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Dropbox} alt="dropbox logo" />
+          </a>
+          <a
+            href="http://www.intercom.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Intercom} alt="intercom logo" />
+          </a>
+          <a
+            href="http://www.marvel.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Marvel} alt="marvel logo" />
+          </a>
+          <a
+            href="http://www.automattic.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Automattic} alt="automattic logo" />
+          </a>
+        </div>
       </div>
     </section>
   );
