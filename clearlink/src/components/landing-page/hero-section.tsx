@@ -1,12 +1,12 @@
+import Automattic from "../../assets/images/automattic.svg";
 import Avatars from "../../assets/images/Avatars.svg";
-import { Icons } from "../icons";
-import ProductDemo from "../../assets/images/product-demo.svg";
-import Shopify from "../../assets/images/shopify-big.svg";
 import Coinbase from "../../assets/images/coinbase.svg";
 import Dropbox from "../../assets/images/dropbox.svg";
+import { Icons } from "../icons";
 import Intercom from "../../assets/images/intercom.svg";
 import Marvel from "../../assets/images/marvel.svg";
-import Automattic from "../../assets/images/automattic.svg";
+import ProductDemo from "../../assets/images/product-demo.svg";
+import Shopify from "../../assets/images/shopify-big.svg";
 import "../styles/hero-section.css";
 
 function HeroSection() {
