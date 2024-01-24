@@ -1,5 +1,5 @@
 import Automattic from "../../assets/images/automattic.svg";
-import Avatars from "../../assets/images/Avatars.svg";
+import Avatars from "../../assets/images/avatars.svg";
 import Coinbase from "../../assets/images/coinbase.svg";
 import Dropbox from "../../assets/images/dropbox.svg";
 import { Icons } from "../icons";
