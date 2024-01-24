@@ -1,0 +1,59 @@
+.whyus-section {
+  padding: 6em;
+}
+
+.whyus-title {
+  position: relative;
+  margin-bottom: 5em;
+}
+
+.whyus-title h2 {
+  margin: 12px 0 20px;
+}
+
+.whyus-title p {
+  width: 63%;
+}
+
+.whyus-title img {
+  position: absolute;
+  top: 22%;
+  right: 15%;
+}
+
+.whyus-card {
+  width: 45%;
+}
+
+.whyus-card h4 {
+  margin: 8px 0 20px;
+}
+
+.whyus-card p {
+  color: var(--gray-600);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.whyus-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whyus-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.icon-wrapper {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  background-color: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: 100vh;
+}

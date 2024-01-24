@@ -14,7 +14,7 @@ function HeroSection() {
               Uniting the world,
               <br /> one video call at a time
             </h1>
-            <p className="hero-paragraph-1">
+            <p className="paragraph-1">
               Experience the future of communication with ClearLink – where
               crystal-clear video conferencing meets unparalleled simplicity.
             </p>

@@ -8,7 +8,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  --gray-50: hsla(210, 24%, 98%, 1);
   --gray-100: hsla(220, 22%, 96%, 1);
+  --gray-200: hsla(220, 17%, 93%, 1);
   --gray-300: hsla(216, 16%, 84%, 1);
   --gray-400: hsla(218, 15%, 65%, 1);
   --gray-500: hsla(220, 13%, 46%, 1);
@@ -39,6 +41,36 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background: url("/background-pattern.svg") top no-repeat;
+}
+
+h1 {
+  color: var(--gray-800);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  margin: 24px 0;
+}
+
+h2 {
+  color: var(--gray-800);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -2%;
+}
+
+h3 {
+  color: var(--blue-700);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+h4 {
+  color: var(--gray-900);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 header {

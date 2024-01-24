@@ -2,6 +2,7 @@ import Customers from "../../assets/images/customers.svg";
 import { IconProps } from "../icons";
 import LongCurvedArrow from "../../assets/images/long-curved-arrow.svg";
 import { why_us_items } from "../../lib/why-us-data";
+import "../styles/why-us-section.css";
 
 export type WhyUsItemProps = {
   title: string;
@@ -13,12 +14,12 @@ export type WhyUsItemProps = {
 
 function WhyUsSection() {
   return (
-    <section>
-      <div>
+    <section className="whyus-section">
+      <div className="whyus-title">
         <div>
-          <h2>The ClearLink Advantage</h2>
-          <h1>Why choose ClearLink?</h1>
-          <p>
+          <h3>The ClearLink Advantage</h3>
+          <h2>Why choose ClearLink?</h2>
+          <p className="paragraph-1">
             In a world where connection is everything, ClearLink takes the lead.
             Our cutting-edge video conferencing app offers:
           </p>
@@ -26,8 +27,8 @@ function WhyUsSection() {
         <img src={LongCurvedArrow} alt="hand drawn arrow" />
       </div>
 
-      <div>
-        <div>
+      <div className="whyus-details">
+        <div className="whyus-items">
           {why_us_items.map((item) => (
             <WhyUsItem
               title={item.title}
@@ -45,13 +46,13 @@ function WhyUsSection() {
 
 function WhyUsItem({ title, description, icon }: WhyUsItemProps) {
   return (
-    <>
-      <span>
+    <div className="whyus-card">
+      <div className="icon-wrapper">
         <icon.path />
-      </span>
-      <h3>{title}</h3>
+      </div>
+      <h4>{title}</h4>
       <p>{description}</p>
-    </>
+    </div>
   );
 }
 
