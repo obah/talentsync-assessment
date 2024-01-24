@@ -1,0 +1,39 @@
+.offer-section {
+  position: relative;
+  padding: 6em 10em;
+  overflow: hidden;
+}
+
+.offer-section-text {
+  width: 50%;
+}
+
+.offer-section-text ul {
+  margin: 2em 0 2.5em;
+  padding-left: 1em;
+}
+
+.offer-section-text ul li {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 2.25em;
+  margin-bottom: 20px;
+  color: var(--gray-600);
+  font-weight: 400;
+  font-size: 24px;
+  list-style: none;
+  background: url("/checkmark.svg") no-repeat left center;
+  vertical-align: middle;
+}
+
+.offer-section-text img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 700px;
+  height: auto;
+  border-top: 8px solid var(--gray-900);
+  border-left: 8px solid var(--gray-900);
+  border-top-left-radius: 18px;
+}

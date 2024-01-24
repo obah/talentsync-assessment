@@ -1,4 +1,5 @@
 import ProductLiveDemo from "../../assets/images/product-live-demo.svg";
+import "../styles/offer-section.css";
 
 function OfferSection() {
   const offers = [
@@ -9,17 +10,17 @@ function OfferSection() {
   ];
 
   return (
-    <section>
-      <div>
-        <h3>Ready to clear the path to perfect communication?</h3>
+    <section className="offer-section">
+      <div className="offer-section-text">
+        <h2>Ready to clear the path to perfect communication?</h2>
         <ul>
           {offers.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
-        <div>
-          <button>Talk to sales</button>
-          <button>Start your free trial</button>
+        <div className="cta-buttons">
+          <button className="primary-btn">Talk to sales</button>
+          <button className="secondary-btn">Start your free trial</button>
         </div>
 
         <img src={ProductLiveDemo} alt="live demo of the product" />
