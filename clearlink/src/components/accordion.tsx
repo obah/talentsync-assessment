@@ -1,5 +1,6 @@
 import { Icons } from "./icons";
 import { useState } from "react";
+import "../components/styles/accordion.css";
 
 type AccordionItem = {
   question: string;
@@ -8,31 +9,31 @@ type AccordionItem = {
 
 export type AccordionData = AccordionItem[];
 
-function Accordion({ data }: { data: AccordionData }) {
+function Accordion({ question, answer }: AccordionItem) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
+  const accordionContent = isOpen ? "show-content" : "hide-content";
+  const accordionOpen = isOpen ? "accordion-open" : "accordion-close";
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <>
-      {data.map((item) => (
-        <div key={item.question}>
-          <button onClick={handleClick}>
-            <p>{item.question}</p>
-            <div>
-              <span>
-                <Icons.PlusCircle />
-              </span>
-              <span>
-                <Icons.MinusCircle />
-              </span>
-            </div>
-          </button>
-          <p>{item.answer}</p>
+      <div className={accordionOpen}>
+        <div onClick={handleClick} className="accordion-wrapper">
+          <p>{question}</p>
+          <div>
+            <span className={accordionContent}>
+              <Icons.PlusCircle />
+            </span>
+            <span className={accordionContent}>
+              <Icons.MinusCircle />
+            </span>
+          </div>
         </div>
-      ))}
+        <p className={accordionContent}>{answer}</p>
+      </div>
     </>
   );
 }

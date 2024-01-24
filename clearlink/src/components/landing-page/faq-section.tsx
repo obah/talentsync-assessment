@@ -1,20 +1,27 @@
 import { Accordion } from "../accordion";
 import { faq_data } from "../../lib/faq-data";
+import "../styles/faq-section.css";
 function FaqSection() {
   return (
-    <section>
-      <div>
-        <h2>Support</h2>
-        <h1>FAQs</h1>
+    <section className="faq-section">
+      <div className="faq-section-title">
+        <h3>Support</h3>
+        <h2>FAQs</h2>
         <p>
           Everything you need to know about the product and billing. Can’t find
           the answer you’re looking for? Please{" "}
-          <span>chat to our friendly team</span>.
+          <a className="content-link">chat to our friendly team</a>.
         </p>
       </div>
 
-      <div>
-        <Accordion data={faq_data} />
+      <div className="faq-accordion-section">
+        {faq_data.map((item) => (
+          <Accordion
+            question={item.question}
+            answer={item.answer}
+            key={item.question}
+          />
+        ))}
       </div>
     </section>
   );
