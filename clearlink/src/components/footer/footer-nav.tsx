@@ -6,16 +6,18 @@ import { footer_menu_data } from "../../lib/footer-menu-data";
 
 function FooterNav() {
   return (
-    <div>
-      <div>
-        <img src={FullLogo} alt="clearlink logo" />
+    <div className="footer-nav">
+      <div className="footer-nav-title">
+        <a href="/">
+          <img src={FullLogo} alt="clearlink logo" />
+        </a>
         <p>
           ClearLink is your gateway to effortless, high-quality video
           conferencing. Join us in shaping the future of communication!
         </p>
       </div>
 
-      <div>
+      <div className="footer-nav-menu">
         {footer_menu_data.map((item) => (
           <div key={item.title}>
             <FooterMenu title={item.title} items={item.items} />
@@ -23,10 +25,22 @@ function FooterNav() {
         ))}
       </div>
 
-      <div>
-        <p>Get the app</p>
-        <img src={AppleStoreBadge} alt="apple app store badge" />
-        <img src={PlaystoreBadge} alt="google playstore badge" />
+      <div className="footer-nav-cta">
+        <h3>Get the app</h3>
+        <a
+          href="https://www.apple.com/app-store/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={AppleStoreBadge} alt="apple app store badge" />
+        </a>
+        <a
+          href="http://play.google.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={PlaystoreBadge} alt="google playstore badge" />
+        </a>
       </div>
     </div>
   );

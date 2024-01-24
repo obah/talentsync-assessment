@@ -1,3 +1,5 @@
+import "../styles/footer-menu.css";
+
 export type FooterMenuProps = {
   title: string;
   items: {
@@ -8,7 +10,7 @@ export type FooterMenuProps = {
 
 function FooterMenu({ title, items }: FooterMenuProps) {
   return (
-    <>
+    <div className="footer-menu-item">
       <p>{title}</p>
       <ul>
         {items.map((item) => (
@@ -17,7 +19,7 @@ function FooterMenu({ title, items }: FooterMenuProps) {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 

@@ -260,7 +260,7 @@ export const Icons = {
       </defs>
     </svg>
   ),
-  Linkedln: (props: IconProps) => (
+  Linkedin: (props: IconProps) => (
     <svg
       width="24"
       height="24"

@@ -1,0 +1,33 @@
+.footer-menu-item {
+  width: 10em;
+}
+
+.footer-menu-item p {
+  margin-bottom: 1em;
+  color: var(--gray-500);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.footer-menu-item ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.footer-menu-item a {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--gray-600);
+  text-decoration: none;
+}
+
+.footer-menu-item a:visited {
+  color: var(--gray-600);
+}
+.footer-menu-item a:hover {
+  color: var(--blue-700);
+}
