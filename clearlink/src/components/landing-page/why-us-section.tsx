@@ -2,7 +2,7 @@ import Customers from "../../assets/images/customers.svg";
 import { IconProps } from "../icons";
 import LongCurvedArrow from "../../assets/images/long-curved-arrow.svg";
 import { why_us_items } from "../../lib/why-us-data";
-import "../styles/why-us-section.css";
+import "../styles/landing-page/why-us-section.css";
 
 export type WhyUsItemProps = {
   title: string;

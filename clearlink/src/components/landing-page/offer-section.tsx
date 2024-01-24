@@ -1,5 +1,5 @@
 import ProductLiveDemo from "../../assets/images/product-live-demo.svg";
-import "../styles/offer-section.css";
+import "../styles/landing-page/offer-section.css";
 
 function OfferSection() {
   const offers = [

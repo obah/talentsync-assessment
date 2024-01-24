@@ -1,4 +1,4 @@
-import "../styles/footer-menu.css";
+import "../styles/footer/footer-menu.css";
 
 export type FooterMenuProps = {
   title: string;

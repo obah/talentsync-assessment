@@ -7,7 +7,7 @@ import Intercom from "../../assets/images/intercom.svg";
 import Marvel from "../../assets/images/marvel.svg";
 import ProductDemo from "../../assets/images/product-demo.svg";
 import Shopify from "../../assets/images/shopify-big.svg";
-import "../styles/hero-section.css";
+import "../styles/landing-page/hero-section.css";
 
 function HeroSection() {
   return (

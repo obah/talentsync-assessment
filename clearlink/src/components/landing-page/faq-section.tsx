@@ -1,6 +1,6 @@
 import { Accordion } from "../accordion";
 import { faq_data } from "../../lib/faq-data";
-import "../styles/faq-section.css";
+import "../styles/landing-page/faq-section.css";
 function FaqSection() {
   return (
     <section className="faq-section">

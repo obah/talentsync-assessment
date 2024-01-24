@@ -2,7 +2,7 @@ import { Icons } from "../icons";
 import PeopleWorking from "../../assets/images/people-working.svg";
 import ProfilePic from "../../assets/images/profile-pic.svg";
 import Shopify from "../../assets/images/shopify.svg";
-import "../styles/testimonials-section.css";
+import "../styles/landing-page/testimonials-section.css";
 
 function TestimonialsSection() {
   const customerName = "Sarah Thompson";

@@ -1,6 +1,6 @@
 import { FooterNav } from "./footer-nav";
 import { Icons } from "../icons";
-import "../styles/footer.css";
+import "../styles/footer/footer.css";
 
 function Footer() {
   return (

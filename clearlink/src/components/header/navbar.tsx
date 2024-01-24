@@ -1,6 +1,6 @@
 import { Menu } from "./menu";
 import fullLogo from "../../assets/images/full_logo.svg";
-import "../styles/navbar.css";
+import "../styles/header/navbar.css";
 
 function Navbar() {
   return (
