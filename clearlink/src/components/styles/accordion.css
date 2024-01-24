@@ -1,0 +1,45 @@
+.accordion {
+  padding: 2em;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.accordion:hover {
+  background-color: var(--gray-200);
+}
+
+.accordion-open {
+  background-color: var(--gray-50);
+  border-radius: 1em;
+  border: 1px solid var(--gray-200);
+}
+.accordion-close {
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.accordion-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--gray-900);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.accordion-answer {
+  margin-top: 0.5em;
+  color: var(--gray-600);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.show-content {
+  display: block;
+}
+
+.hide-content {
+  display: none;
+}

@@ -13,28 +13,27 @@ function Accordion({ question, answer }: AccordionItem) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const accordionContent = isOpen ? "show-content" : "hide-content";
+  const openBtn = isOpen ? "hide-content" : "show-content";
   const accordionOpen = isOpen ? "accordion-open" : "accordion-close";
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <>
-      <div className={accordionOpen}>
-        <div onClick={handleClick} className="accordion-wrapper">
-          <p>{question}</p>
-          <div>
-            <span className={accordionContent}>
-              <Icons.PlusCircle />
-            </span>
-            <span className={accordionContent}>
-              <Icons.MinusCircle />
-            </span>
-          </div>
+    <div className={"accordion " + accordionOpen} onClick={handleClick}>
+      <div className="accordion-item">
+        <p>{question}</p>
+        <div>
+          <span className={openBtn}>
+            <Icons.PlusCircle />
+          </span>
+          <span className={accordionContent}>
+            <Icons.MinusCircle />
+          </span>
         </div>
-        <p className={accordionContent}>{answer}</p>
       </div>
-    </>
+      <p className={"accordion-answer " + accordionContent}>{answer}</p>
+    </div>
   );
 }
 

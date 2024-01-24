@@ -78,3 +78,12 @@
   font-size: 44px;
   line-height: 60px;
 }
+
+.content-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content-link:hover {
+  color: var(--blue-700);
+}
