@@ -3,6 +3,7 @@
   justify-content: space-between;
   gap: 4em;
   padding: 6em 5.5em;
+  background-color: var(--gray-50);
 }
 
 .testimonials-details {
