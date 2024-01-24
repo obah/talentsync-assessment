@@ -62,3 +62,18 @@
 .social-icons svg:hover {
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 1024px) {
+  .footer-nav {
+    justify-content: space-between;
+    padding: 3em 2em 1em;
+    width: 100%;
+  }
+  .footer-nav-menu {
+    display: none;
+  }
+
+  .footer-nav-title p {
+    margin-top: 1em;
+  }
+}

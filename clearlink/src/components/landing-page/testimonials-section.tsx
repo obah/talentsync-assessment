@@ -44,7 +44,11 @@ function TestimonialsSection() {
         </div>
       </div>
 
-      <img src={PeopleWorking} alt="people working with the product" />
+      <img
+        src={PeopleWorking}
+        alt="people working with the product"
+        className="testimonials-img"
+      />
     </section>
   );
 }

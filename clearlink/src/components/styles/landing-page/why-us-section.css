@@ -57,3 +57,39 @@
   border: 1px solid var(--gray-200);
   border-radius: 100vh;
 }
+
+@media screen and (max-width: 1024px) {
+  .whyus-section {
+    padding: 3em;
+  }
+
+  .whyus-title {
+    text-align: center;
+  }
+
+  .whyus-title p {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .whyus-title img {
+    display: none;
+  }
+
+  .whyus-details {
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .whyus-details img {
+    object-fit: contain;
+    width: 50%;
+  }
+
+  .whyus-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

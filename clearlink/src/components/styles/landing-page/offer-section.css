@@ -37,3 +37,23 @@
   border-left: 8px solid var(--gray-900);
   border-top-left-radius: 18px;
 }
+
+@media screen and (max-width: 1024px) {
+  .offer-section {
+    padding: 3em 5em;
+  }
+
+  .offer-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .offer-section-text img {
+    position: static;
+    margin: 3em auto 0;
+  }
+}

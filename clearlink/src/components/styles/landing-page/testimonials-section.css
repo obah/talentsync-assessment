@@ -47,3 +47,19 @@
 .shopify-logo {
   width: 112px;
 }
+
+@media screen and (max-width: 1024px) {
+  .testimonials-section {
+    padding: 3em 2.5em;
+    flex-direction: column;
+  }
+
+  .testimonials-details {
+    gap: 1em;
+  }
+
+  .testimonials-img {
+    width: 60%;
+    margin: 0 auto;
+  }
+}

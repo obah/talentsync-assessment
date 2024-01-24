@@ -22,3 +22,14 @@
 .faq-accordion-section {
   width: 55%;
 }
+
+@media screen and (max-width: 1024px) {
+  .faq-section {
+    flex-direction: column;
+  }
+
+  .faq-section-title,
+  .faq-accordion-section {
+    width: 90%;
+  }
+}
