@@ -17,7 +17,7 @@
 
 .primary-btn:focus,
 .primary-btn:focus-visible {
-  outline: 2px auto var(--blue-700);
+  outline: 2px solid var(--blue-700);
 }
 
 .secondary-btn {
@@ -30,12 +30,24 @@
   color: var(--gray-900);
 }
 
-.secondary-btn:focus,
-.secondary-btn:focus-visible {
-  outline: 2px auto var(--gray-900);
+.icon-btn {
+  display: grid;
+  place-content: center;
+  background-color: white;
+  border: 1px solid var(--blue-100);
+  width: 56px;
+  height: 56px;
 }
 
-.icon-btn {
+.icon-btn:hover {
+  background-color: var(--gray-300);
+}
+
+.secondary-btn:focus,
+.secondary-btn:focus-visible,
+.icon-btn:focus,
+.icon-btn:focus-visible {
+  outline: 2px solid var(--gray-900);
 }
 
 .cta-buttons {
@@ -58,4 +70,11 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
+}
+
+.paragraph-2 {
+  color: var(--gray-900);
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 60px;
 }

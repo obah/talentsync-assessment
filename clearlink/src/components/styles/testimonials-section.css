@@ -1,0 +1,48 @@
+.testimonials-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  padding: 6em 5.5em;
+}
+
+.testimonials-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.testimonial-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonial-profile {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.testimonial-profile p:nth-of-type(1) {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--gray-900);
+  line-height: 30px;
+}
+
+.testimonial-profile p:nth-of-type(2) {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--gray-600);
+  line-height: 28px;
+}
+
+.testimonial-switch {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.shopify-logo {
+  width: 112px;
+}
