@@ -13,11 +13,10 @@ nav ul {
   font-weight: 600;
   font-size: 1.125em;
   cursor: pointer;
-  width: 100px;
 }
 
 .nav-item:hover {
-  font-weight: 700;
+  color: var(--blue-700);
 }
 
 .nav-item svg {
